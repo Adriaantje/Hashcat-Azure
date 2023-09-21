@@ -26,9 +26,6 @@ tar -xf ${HASHCAT_SRC_PKG}.tar.gz
 cd ${HASHCAT_SRC_PKG}
 make && make install
 
-# Install John the Ripper
-snap install john-the-ripper
-
 # Install and reference some wordlists
 wget --quiet -O /opt/rockyou.txt https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt
 
