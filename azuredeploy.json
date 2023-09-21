@@ -7,8 +7,21 @@
       "defaultValue": "HashcatVM",
       "minLength": 1
     },
+    "vmSize": {
+      "type": "string",
+      "defaultValue": "Standard_NC6s_v3",
+      "metadata": {
+        "description": "VM size for the hashcat server. (see https://azureprice.net/)"
+      },
+      "allowedValues": [
+        "Standard_NC6s_v3",
+        "Standard_NC12s_v3",
+        "Standard_NC24s_v3"
+      ]
+    },
     "adminUsername": {
       "type": "string",
+      "defaultValue": "adriaantje",
       "minLength": 1
     },
     "adminPublicKey": {
