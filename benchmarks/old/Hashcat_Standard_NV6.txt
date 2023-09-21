@@ -162,4 +162,5 @@ Speed.#1.........:     1506 H/s (45.83ms) @ Accel:1 Loops:1024 Thr:1024 Vec:1
 Speed.#2.........:      753 H/s (221.96ms) @ Accel:8 Loops:256 Thr:1024 Vec:1
 Speed.#*.........:     2259 H/s
 
-Started: Sun Jun  6 12:37:40 2021Stopped: Sun Jun  6 12:48:25 2021
+Started: Sun Jun  6 12:37:40 2021
+Stopped: Sun Jun  6 12:48:25 2021
