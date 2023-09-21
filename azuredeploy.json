@@ -4,7 +4,7 @@
   "parameters": {
     "virtualMachineName": {
       "type": "string",
-      "defaultValue": "HashcatVM",
+      "defaultValue": "hashcat",
       "minLength": 1
     },
     "vmSize": {
@@ -21,7 +21,7 @@
     },
     "adminUsername": {
       "type": "string",
-      "defaultValue": "adriaantje",
+      "defaultValue": "admin",
       "minLength": 1
     },
     "adminPublicKey": {
