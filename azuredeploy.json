@@ -36,7 +36,7 @@
     "subnetPrefix": "10.0.0.0/24",
     "publicIPAddressName": "HashcatPublicIP",
     "publicIPAddressType": "Dynamic",
-    "vmName": "HashcatVM",
+    "vmName": "hashcat",
     "virtualNetworkName": "HashcatNetwork",
     "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
     "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]"
