@@ -96,6 +96,9 @@
         ],
         "networkSecurityGroup": {
           "id": "[resourceId('Microsoft.Network/networkSecurityGroups', 'HashcatNSG')]"
+        },
+        "securityProfile": {
+          "securityType": "Standard"
         }
       }
     },
