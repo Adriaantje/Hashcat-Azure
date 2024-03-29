@@ -1,0 +1,367 @@
+CUDA API (CUDA 12.1)
+====================
+* Device #1: NVIDIA A100 80GB PCIe, 80675/81092 MB, 108MCU
+* Device #2: NVIDIA A100 80GB PCIe, 80675/81092 MB, 108MCU
+* Device #3: NVIDIA A100 80GB PCIe, 80675/81092 MB, 108MCU
+* Device #4: NVIDIA A100 80GB PCIe, 80675/81092 MB, 108MCU
+
+OpenCL API (OpenCL 3.0 CUDA 12.1.68) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #5: NVIDIA A100 80GB PCIe, 80640/81092 MB (20273 MB allocatable), 108MCU
+* Device #6: NVIDIA A100 80GB PCIe, 80640/81092 MB (20273 MB allocatable), 108MCU
+* Device #7: NVIDIA A100 80GB PCIe, 80640/81092 MB (20273 MB allocatable), 108MCU
+* Device #8: NVIDIA A100 80GB PCIe, 80640/81092 MB (20273 MB allocatable), 108MCU
+
+Benchmark relevant options:
+===========================
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#1.........: 29249.6 MH/s (59.37ms) @ Accel:64 Loops:1024 Thr:256 Vec:1
+Speed.#2.........: 29315.6 MH/s (59.24ms) @ Accel:64 Loops:1024 Thr:256 Vec:1
+Speed.#3.........: 29231.1 MH/s (59.41ms) @ Accel:64 Loops:1024 Thr:256 Vec:1
+Speed.#4.........: 29159.6 MH/s (59.55ms) @ Accel:64 Loops:1024 Thr:256 Vec:1
+Speed.#5.........: 29135.4 MH/s (29.06ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#6.........: 29323.4 MH/s (29.00ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#7.........: 29243.2 MH/s (29.09ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#8.........: 29060.7 MH/s (28.67ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#*.........:   233.7 GH/s
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#1.........:  9778.5 MH/s (90.14ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:  9756.4 MH/s (90.35ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#3.........:  9791.1 MH/s (90.46ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#4.........:  9755.3 MH/s (90.76ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#5.........:  9791.4 MH/s (90.51ms) @ Accel:32 Loops:1024 Thr:256 Vec:1
+Speed.#6.........:  9760.2 MH/s (91.37ms) @ Accel:32 Loops:1024 Thr:256 Vec:1
+Speed.#7.........:  9813.6 MH/s (89.89ms) @ Accel:32 Loops:1024 Thr:256 Vec:1
+Speed.#8.........:  9759.0 MH/s (91.20ms) @ Accel:32 Loops:1024 Thr:256 Vec:1
+Speed.#*.........: 78205.6 MH/s
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#1.........:  4179.6 MH/s (52.34ms) @ Accel:64 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:  4180.2 MH/s (51.74ms) @ Accel:64 Loops:1024 Thr:32 Vec:1
+Speed.#3.........:  4182.4 MH/s (52.02ms) @ Accel:64 Loops:1024 Thr:32 Vec:1
+Speed.#4.........:  4110.1 MH/s (52.76ms) @ Accel:64 Loops:1024 Thr:32 Vec:1
+Speed.#5.........:  4178.2 MH/s (51.74ms) @ Accel:8 Loops:1024 Thr:256 Vec:1
+Speed.#6.........:  4182.8 MH/s (51.84ms) @ Accel:8 Loops:1024 Thr:256 Vec:1
+Speed.#7.........:  4216.7 MH/s (51.29ms) @ Accel:8 Loops:1024 Thr:256 Vec:1
+Speed.#8.........:  4225.5 MH/s (51.23ms) @ Accel:8 Loops:1024 Thr:256 Vec:1
+Speed.#*.........: 33455.5 MH/s
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#1.........:  1345.5 MH/s (81.78ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:  1348.6 MH/s (81.59ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#3.........:  1358.7 MH/s (80.96ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#4.........:  1343.0 MH/s (81.93ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#5.........:  1283.8 MH/s (85.86ms) @ Accel:4 Loops:1024 Thr:256 Vec:1
+Speed.#6.........:  1285.4 MH/s (85.65ms) @ Accel:4 Loops:1024 Thr:256 Vec:1
+Speed.#7.........:  1272.7 MH/s (86.66ms) @ Accel:4 Loops:1024 Thr:256 Vec:1
+Speed.#8.........:  1281.3 MH/s (86.02ms) @ Accel:4 Loops:1024 Thr:256 Vec:1
+Speed.#*.........: 10519.0 MH/s
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#1.........:   676.4 kH/s (39.41ms) @ Accel:64 Loops:512 Thr:32 Vec:1
+Speed.#2.........:   676.6 kH/s (40.05ms) @ Accel:64 Loops:512 Thr:32 Vec:1
+Speed.#3.........:   680.5 kH/s (39.33ms) @ Accel:64 Loops:512 Thr:32 Vec:1
+Speed.#4.........:   676.2 kH/s (39.23ms) @ Accel:64 Loops:512 Thr:32 Vec:1
+Speed.#5.........:   493.1 kH/s (54.71ms) @ Accel:8 Loops:1024 Thr:128 Vec:1
+Speed.#6.........:   491.9 kH/s (53.43ms) @ Accel:8 Loops:1024 Thr:128 Vec:1
+Speed.#7.........:   494.3 kH/s (54.59ms) @ Accel:8 Loops:1024 Thr:128 Vec:1
+Speed.#8.........:   490.4 kH/s (55.15ms) @ Accel:8 Loops:1024 Thr:128 Vec:1
+Speed.#*.........:  4679.3 kH/s
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#1.........: 85790.4 MH/s (41.17ms) @ Accel:64 Loops:1024 Thr:512 Vec:1
+Speed.#2.........: 86142.2 MH/s (40.96ms) @ Accel:64 Loops:1024 Thr:512 Vec:1
+Speed.#3.........: 86167.0 MH/s (40.97ms) @ Accel:64 Loops:1024 Thr:512 Vec:1
+Speed.#4.........: 85752.1 MH/s (41.11ms) @ Accel:64 Loops:1024 Thr:512 Vec:1
+Speed.#5.........: 49827.1 MH/s (15.67ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#6.........: 49935.8 MH/s (15.63ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#7.........: 49826.7 MH/s (15.67ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#8.........: 49684.5 MH/s (15.73ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#*.........:   543.1 GH/s
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#1.........: 29440.4 MH/s (28.85ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#2.........: 29561.4 MH/s (28.72ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#3.........: 29507.1 MH/s (28.18ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#4.........: 29386.7 MH/s (28.30ms) @ Accel:256 Loops:1024 Thr:32 Vec:1
+Speed.#5.........: 29429.7 MH/s (28.28ms) @ Accel:64 Loops:1024 Thr:128 Vec:1
+Speed.#6.........: 29440.3 MH/s (28.27ms) @ Accel:64 Loops:1024 Thr:128 Vec:1
+Speed.#7.........: 29521.1 MH/s (28.80ms) @ Accel:64 Loops:1024 Thr:128 Vec:1
+Speed.#8.........: 29401.5 MH/s (28.86ms) @ Accel:64 Loops:1024 Thr:128 Vec:1
+Speed.#*.........:   235.7 GH/s
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#1.........: 49970.0 MH/s (35.16ms) @ Accel:1024 Loops:512 Thr:32 Vec:1
+Speed.#2.........: 49985.5 MH/s (35.14ms) @ Accel:1024 Loops:512 Thr:32 Vec:1
+Speed.#3.........: 50050.4 MH/s (35.13ms) @ Accel:1024 Loops:512 Thr:32 Vec:1
+Speed.#4.........: 49701.0 MH/s (35.31ms) @ Accel:1024 Loops:512 Thr:32 Vec:1
+Speed.#5.........: 29836.7 MH/s (27.86ms) @ Accel:128 Loops:1024 Thr:64 Vec:1
+Speed.#6.........: 29828.2 MH/s (27.87ms) @ Accel:128 Loops:1024 Thr:64 Vec:1
+Speed.#7.........: 29814.3 MH/s (27.88ms) @ Accel:128 Loops:1024 Thr:64 Vec:1
+Speed.#8.........: 29783.9 MH/s (27.92ms) @ Accel:128 Loops:1024 Thr:64 Vec:1
+Speed.#*.........:   319.0 GH/s
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#1.........:  2155.7 MH/s (51.15ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:  2157.4 MH/s (51.14ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#3.........:  2159.1 MH/s (51.13ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#4.........:  2151.4 MH/s (51.23ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#5.........:  2155.1 MH/s (50.08ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#6.........:  2156.9 MH/s (50.04ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#7.........:  2158.7 MH/s (50.00ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#8.........:  2150.9 MH/s (50.18ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#*.........: 17245.2 MH/s
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#1.........:  1195.9 MH/s (92.75ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:  1194.3 MH/s (92.74ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#3.........:  1196.6 MH/s (92.64ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#4.........:  1192.5 MH/s (92.52ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#5.........:  1195.5 MH/s (92.26ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#6.........:  1194.0 MH/s (92.39ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#7.........:  1196.2 MH/s (92.21ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#8.........:  1194.4 MH/s (92.37ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#*.........:  9559.4 MH/s
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#1.........: 12427.6 kH/s (64.46ms) @ Accel:128 Loops:1000 Thr:64 Vec:1
+Speed.#2.........: 12432.6 kH/s (64.29ms) @ Accel:128 Loops:1000 Thr:64 Vec:1
+Speed.#3.........: 12465.6 kH/s (64.27ms) @ Accel:128 Loops:1000 Thr:64 Vec:1
+Speed.#4.........: 12269.7 kH/s (65.03ms) @ Accel:128 Loops:1000 Thr:64 Vec:1
+Speed.#5.........: 12551.8 kH/s (61.61ms) @ Accel:64 Loops:1000 Thr:128 Vec:1
+Speed.#6.........: 12592.2 kH/s (61.62ms) @ Accel:64 Loops:1000 Thr:128 Vec:1
+Speed.#7.........: 12591.3 kH/s (61.50ms) @ Accel:64 Loops:1000 Thr:128 Vec:1
+Speed.#8.........: 12401.6 kH/s (61.37ms) @ Accel:64 Loops:1000 Thr:128 Vec:1
+Speed.#*.........: 99732.3 kH/s
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt $2*$, Blowfish (Unix)) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#1.........:    96862 H/s (72.40ms) @ Accel:2 Loops:32 Thr:40 Vec:1
+Speed.#2.........:    95449 H/s (70.04ms) @ Accel:2 Loops:32 Thr:40 Vec:1
+Speed.#3.........:    92411 H/s (67.50ms) @ Accel:2 Loops:32 Thr:40 Vec:1
+Speed.#4.........:    93113 H/s (67.62ms) @ Accel:2 Loops:32 Thr:40 Vec:1
+Speed.#5.........:    40881 H/s (50.56ms) @ Accel:2 Loops:32 Thr:11 Vec:1
+Speed.#6.........:    41482 H/s (49.76ms) @ Accel:2 Loops:32 Thr:11 Vec:1
+Speed.#7.........:    41180 H/s (50.54ms) @ Accel:2 Loops:32 Thr:11 Vec:1
+Speed.#8.........:    41413 H/s (49.89ms) @ Accel:2 Loops:32 Thr:11 Vec:1
+Speed.#*.........:   542.8 kH/s
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#1.........:   314.8 kH/s (39.98ms) @ Accel:2048 Loops:128 Thr:256 Vec:1
+Speed.#2.........:   315.0 kH/s (39.94ms) @ Accel:2048 Loops:128 Thr:256 Vec:1
+Speed.#3.........:   314.7 kH/s (39.98ms) @ Accel:2048 Loops:128 Thr:256 Vec:1
+Speed.#4.........:   315.2 kH/s (39.93ms) @ Accel:2048 Loops:128 Thr:256 Vec:1
+Speed.#5.........:   234.7 kH/s (53.03ms) @ Accel:2048 Loops:256 Thr:128 Vec:1
+Speed.#6.........:   234.9 kH/s (52.98ms) @ Accel:2048 Loops:256 Thr:128 Vec:1
+Speed.#7.........:   234.5 kH/s (53.07ms) @ Accel:2048 Loops:256 Thr:128 Vec:1
+Speed.#8.........:   234.3 kH/s (53.12ms) @ Accel:2048 Loops:256 Thr:128 Vec:1
+Speed.#*.........:  2198.0 kH/s
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#1.........:   933.6 MH/s (58.13ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#2.........:   933.4 MH/s (58.14ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#3.........:   931.3 MH/s (59.58ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#4.........:   929.7 MH/s (59.60ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#5.........:   933.7 MH/s (60.14ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#6.........:   933.6 MH/s (60.16ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#7.........:   931.2 MH/s (58.32ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#8.........:   929.5 MH/s (58.43ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#*.........:  7456.1 MH/s
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#1.........:   861.8 MH/s (63.19ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#2.........:   861.6 MH/s (63.30ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#3.........:   861.8 MH/s (63.45ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#4.........:   859.3 MH/s (64.87ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#5.........:   862.1 MH/s (64.80ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#6.........:   861.8 MH/s (64.71ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#7.........:   862.0 MH/s (64.53ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#8.........:   859.3 MH/s (63.41ms) @ Accel:256 Loops:64 Thr:32 Vec:1
+Speed.#*.........:  6889.6 MH/s
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#1.........:    84046 H/s (54.05ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:    83953 H/s (52.32ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#3.........:    84131 H/s (52.21ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#4.........:    83871 H/s (52.36ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#5.........:   116.6 kH/s (39.04ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#6.........:   116.9 kH/s (39.71ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#7.........:   117.1 kH/s (39.67ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#8.........:   116.8 kH/s (39.76ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#*.........:   803.4 kH/s
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#1.........:    47914 H/s (86.43ms) @ Accel:16 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:    47996 H/s (86.24ms) @ Accel:16 Loops:1024 Thr:32 Vec:1
+Speed.#3.........:    47947 H/s (86.33ms) @ Accel:16 Loops:1024 Thr:32 Vec:1
+Speed.#4.........:    47728 H/s (86.55ms) @ Accel:16 Loops:1024 Thr:32 Vec:1
+Speed.#5.........:    48948 H/s (84.25ms) @ Accel:2 Loops:1024 Thr:256 Vec:1
+Speed.#6.........:    49068 H/s (84.05ms) @ Accel:2 Loops:1024 Thr:256 Vec:1
+Speed.#7.........:    49016 H/s (84.16ms) @ Accel:2 Loops:1024 Thr:256 Vec:1
+Speed.#8.........:    48871 H/s (84.45ms) @ Accel:2 Loops:1024 Thr:256 Vec:1
+Speed.#*.........:   387.5 kH/s
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#1.........:  1018.9 kH/s (42.83ms) @ Accel:64 Loops:255 Thr:32 Vec:1
+Speed.#2.........:  1011.9 kH/s (42.32ms) @ Accel:64 Loops:255 Thr:32 Vec:1
+Speed.#3.........:  1016.1 kH/s (42.90ms) @ Accel:64 Loops:255 Thr:32 Vec:1
+Speed.#4.........:  1013.2 kH/s (43.01ms) @ Accel:64 Loops:255 Thr:32 Vec:1
+Speed.#5.........:   600.7 kH/s (87.55ms) @ Accel:2 Loops:1023 Thr:256 Vec:1
+Speed.#6.........:   591.3 kH/s (87.55ms) @ Accel:2 Loops:1023 Thr:256 Vec:1
+Speed.#7.........:   599.1 kH/s (87.69ms) @ Accel:2 Loops:1023 Thr:256 Vec:1
+Speed.#8.........:   596.9 kH/s (87.90ms) @ Accel:2 Loops:1023 Thr:256 Vec:1
+Speed.#*.........:  6448.1 kH/s
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#1.........:   527.1 kH/s (95.99ms) @ Accel:64 Loops:4096 Thr:32 Vec:1
+Speed.#2.........:   540.9 kH/s (96.90ms) @ Accel:64 Loops:4096 Thr:32 Vec:1
+Speed.#3.........:   524.7 kH/s (97.49ms) @ Accel:64 Loops:4096 Thr:32 Vec:1
+Speed.#4.........:   524.1 kH/s (97.46ms) @ Accel:64 Loops:4096 Thr:32 Vec:1
+Speed.#5.........:   526.6 kH/s (96.24ms) @ Accel:64 Loops:4096 Thr:32 Vec:1
+Speed.#6.........:   546.5 kH/s (95.47ms) @ Accel:64 Loops:4096 Thr:32 Vec:1
+Speed.#7.........:   526.6 kH/s (96.01ms) @ Accel:64 Loops:4096 Thr:32 Vec:1
+Speed.#8.........:   526.8 kH/s (95.99ms) @ Accel:64 Loops:4096 Thr:32 Vec:1
+Speed.#*.........:  4243.1 kH/s
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#1.........:    12313 H/s (15.06ms) @ Accel:32 Loops:16384 Thr:32 Vec:1
+Speed.#2.........:    12418 H/s (15.06ms) @ Accel:32 Loops:16384 Thr:32 Vec:1
+Speed.#3.........:    12351 H/s (15.06ms) @ Accel:32 Loops:16384 Thr:32 Vec:1
+Speed.#4.........:    12404 H/s (15.12ms) @ Accel:32 Loops:16384 Thr:32 Vec:1
+Speed.#5.........:    74485 H/s (21.82ms) @ Accel:4 Loops:16384 Thr:256 Vec:1
+Speed.#6.........:    74519 H/s (21.67ms) @ Accel:4 Loops:16384 Thr:256 Vec:1
+Speed.#7.........:    74217 H/s (21.70ms) @ Accel:4 Loops:16384 Thr:256 Vec:1
+Speed.#8.........:    73912 H/s (21.85ms) @ Accel:4 Loops:16384 Thr:256 Vec:1
+Speed.#*.........:   346.6 kH/s
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#1.........:    52176 H/s (65.27ms) @ Accel:64 Loops:512 Thr:32 Vec:1
+Speed.#2.........:    52211 H/s (64.06ms) @ Accel:64 Loops:512 Thr:32 Vec:1
+Speed.#3.........:    52063 H/s (63.81ms) @ Accel:64 Loops:512 Thr:32 Vec:1
+Speed.#4.........:    52076 H/s (64.10ms) @ Accel:64 Loops:512 Thr:32 Vec:1
+Speed.#5.........:    52170 H/s (63.69ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#6.........:    52233 H/s (64.31ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#7.........:    52089 H/s (64.61ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#8.........:    52102 H/s (64.47ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#*.........:   417.1 kH/s
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#1.........:   494.7 kH/s (50.73ms) @ Accel:64 Loops:256 Thr:32 Vec:1
+Speed.#2.........:   493.4 kH/s (51.07ms) @ Accel:64 Loops:256 Thr:32 Vec:1
+Speed.#3.........:   497.4 kH/s (51.14ms) @ Accel:64 Loops:256 Thr:32 Vec:1
+Speed.#4.........:   495.4 kH/s (50.19ms) @ Accel:64 Loops:256 Thr:32 Vec:1
+Speed.#5.........:   366.4 kH/s (65.94ms) @ Accel:4 Loops:512 Thr:256 Vec:1
+Speed.#6.........:   362.8 kH/s (66.77ms) @ Accel:4 Loops:512 Thr:256 Vec:1
+Speed.#7.........:   361.2 kH/s (66.25ms) @ Accel:4 Loops:512 Thr:256 Vec:1
+Speed.#8.........:   361.2 kH/s (67.04ms) @ Accel:4 Loops:512 Thr:256 Vec:1
+Speed.#*.........:  3432.7 kH/s
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#1.........:    59231 H/s (75.55ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:    59229 H/s (75.56ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#3.........:    59253 H/s (75.51ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#4.........:    59106 H/s (75.72ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#5.........:    60770 H/s (73.28ms) @ Accel:4 Loops:1024 Thr:256 Vec:1
+Speed.#6.........:    60766 H/s (73.29ms) @ Accel:4 Loops:1024 Thr:256 Vec:1
+Speed.#7.........:    60801 H/s (73.24ms) @ Accel:4 Loops:1024 Thr:256 Vec:1
+Speed.#8.........:    60640 H/s (73.42ms) @ Accel:4 Loops:1024 Thr:256 Vec:1
+Speed.#*.........:   479.8 kH/s
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#1.........:  3262.2 kH/s (42.37ms) @ Accel:128 Loops:249 Thr:32 Vec:1
+Speed.#2.........:  3258.9 kH/s (41.33ms) @ Accel:128 Loops:249 Thr:32 Vec:1
+Speed.#3.........:  3262.2 kH/s (42.43ms) @ Accel:128 Loops:249 Thr:32 Vec:1
+Speed.#4.........:  3249.4 kH/s (42.63ms) @ Accel:128 Loops:249 Thr:32 Vec:1
+Speed.#5.........:  3308.3 kH/s (41.00ms) @ Accel:16 Loops:249 Thr:256 Vec:1
+Speed.#6.........:  3307.1 kH/s (40.85ms) @ Accel:16 Loops:249 Thr:256 Vec:1
+Speed.#7.........:  3304.5 kH/s (41.00ms) @ Accel:16 Loops:249 Thr:256 Vec:1
+Speed.#8.........:  3289.8 kH/s (41.03ms) @ Accel:16 Loops:249 Thr:256 Vec:1
+Speed.#*.........: 26242.4 kH/s
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#1.........:     6329 H/s (86.82ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#2.........:     6295 H/s (87.52ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#3.........:     6321 H/s (87.16ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#4.........:     6274 H/s (87.55ms) @ Accel:32 Loops:1024 Thr:32 Vec:1
+Speed.#5.........:     6349 H/s (86.59ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#6.........:     6408 H/s (85.75ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#7.........:     6347 H/s (86.64ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#8.........:     6386 H/s (86.06ms) @ Accel:8 Loops:512 Thr:256 Vec:1
+Speed.#*.........:    50709 H/s
